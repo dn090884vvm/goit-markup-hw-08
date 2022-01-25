@@ -1,0 +1,28 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
+// .clients__link:hover,
+// .clients__link:focus {
+//   fill: var(--accent-color);
+//   border: 1px solid var(--accent-color);
+// }

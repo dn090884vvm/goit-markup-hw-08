@@ -1,0 +1,111 @@
+/* background
+head #FFFFFF
+hero #2F303A
+наши цели #FFFFFF
+Чем мы занимаемся #FFFFFF
+Наша команда #F5F4FA
+footer #2F303A
+*/
+
+/* head
+logo #2196F3 + #000000 Raleway bold 26
+ссылки навигации #212121 Roboto 14 medium
+ссылки навигации hover #2196F3 Roboto 14 medium
+
+mail+ phone
+#757575 Roboto 14 medium
+mail+ phone hover #2196F3 Roboto 14 medium
+*/
+
+/*  hero
+
+main text #FFFFFF Roboto 44 black
+button text #FFFFFF Roboto 16 Bold
+button background #2196F3
+
+*/
+
+/* Features  Наши цели
+
+заголовок features (скроется) #212121 Roboto Bold 36  
+Заголовки #212121 Roboto Bold 14
+Paragraph #757575 Roboto regular 14
+
+*/
+
+/* 
+Чем мы занимаемся
+Заголовок #212121 Roboto Bold 36
+*/
+
+/* Наша команда
+
+Заголовок #212121 Roboto Bold 36
+name #212121 Roboto medium 16
+profession #757575 Roboto regular 16
+
+*/
+
+/* Footer
+logo #2196F3 + #FFFFFF Raleway bold 26
+address #FFFFFF Roboto regular 14
+contacts rgba(255, 255, 255, 0.6) Roboto regular 14
+*/
+/* описание переменных */
+
+/* .vis {
+  outline: 2px solid tomato;
+} */
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* header */
+
+/* end of header */
+
+/* Hero */
+/* .hero-overlay {
+  max-width: 1600 px;
+  max-height: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero-background.jpg);
+  background-image: linear-gradient(to right, rgba (255, 0, 0, 0.5));
+  background-image: linear-gradient (to rignt, rgb(255, 0, 0), rgb(0, 0, 255));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* End of hero */
+
+/* our features */
+
+/* end of out features */
+
+/* example section */
+
+/* end of example section */
+
+/* our team */
+
+/* end of our team */
+
+/* Clients */
+
+/* end of clients */
+
+/* footer */
+
+/* end of footer */
+
+/* PORTFOLIO PAGE */
+
+/* main */
+
+/* end of main */
+
+/* MODAL */
