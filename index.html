@@ -116,12 +116,12 @@
     <main>
       <!--Герой -->
 
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
       <!--Наши цели -->
       <!-- <section class="features section">
@@ -177,40 +177,77 @@
       </section> -->
 
       <!--Чем мы занимаемся -->
-      <!-- <section class="example section">
+      <section class="example section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="example__list list">
             <li class="example__item">
-              <img
-                src="./images/work-exp-1.jpg"
-                alt="Фото примера работ 1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-1-desktop.webp    1x,
+                    ./images/expamples/work-exp-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-1-desktop.jpg    1x,
+                    ./images/expamples/work-exp-1-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="./images/expamples/work-exp-1-desktop.jpg" alt="Фото примера работ 1" />
+              </picture>
+
               <p class="example__description">Десктопные приложения</p>
             </li>
             <li class="example__item">
-              <img
-                src="./images/work-exp-2.jpg"
-                alt="Фото примера работ 2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-2-desktop.webp    1x,
+                    ./images/expamples/work-exp-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-2-desktop.jpg    1x,
+                    ./images/expamples/work-exp-2-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="./images/expamples/work-exp-2-desktop.jpg" alt="Фото примера работ 2" />
+              </picture>
               <p class="example__description">Мобильные приложения</p>
             </li>
             <li class="example__item">
-              <img
-                src="./images/work-exp-3.jpg"
-                alt="Фото примера работ 3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-3-desktop.webp    1x,
+                    ./images/expamples/work-exp-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/expamples/work-exp-3-desktop.jpg    1x,
+                    ./images/expamples/work-exp-3-desktop@2x.jpg 2x
+                  "
+                />
+                <img src="./images/expamples/work-exp-3-desktop.jpg" alt="Фото примера работ 3" />
+              </picture>
               <p class="example__description">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда -->
       <!-- <section class="team section">
