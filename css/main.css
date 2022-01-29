@@ -159,8 +159,7 @@ ol {
   transform: translate(-50%, -50%) scale(1) rotate(720deg);
   transition: transform 1000ms var(--cubic);
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  min-width: 320px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -187,6 +186,18 @@ ol {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -196,7 +207,7 @@ ol {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -264,14 +275,22 @@ ol {
   border-color: var(--accent-color);
 }
 
+.modal__message-field::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal__license {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -279,8 +298,8 @@ ol {
 .modal__license-link {
   margin-left: 6px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
@@ -309,7 +328,7 @@ ol {
 .modal__checkbox-icon {
   display: inline-block;
   align-items: center;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   background-image: url(../images/svg/icon-not-checked.svg);
   border-radius: 2px;
@@ -329,6 +348,21 @@ ol {
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(0deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__license {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .modal__license-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .navigation__list {
