@@ -18,8 +18,8 @@
 .team__info {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team__social-list {
   margin-top: 16px;
@@ -80,10 +80,6 @@
 
 //1200+
 @media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
   }
