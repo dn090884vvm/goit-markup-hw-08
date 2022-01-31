@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--Шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container head-container">
         <nav class="navigation">
           <a href="./index.html" class="logo header__logo link"
@@ -28,7 +28,7 @@
           >
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link">Студия</a>
+              <a href="" class="navigation__link link">Студия</a>
             </li>
             <li class="navigation__item">
               <a href="./portfolio.html" class="navigation__link link navigation__link-current"
@@ -38,6 +38,11 @@
             <li class="navigation__item"><a href="" class="navigation__link link">Контакты</a></li>
           </ul>
         </nav>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/symbol-defs.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contact-list list">
           <li class="contact-list__item">
             <a class="contact-list__link link" href="mailto:info@devstudio.com">
@@ -57,7 +62,59 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="close-btn mobile-menu__close-btn" data-menu-close>
+            <svg class="close-btn__icon">
+              <use href="images/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <ul class="nav-mobile-list list">
+            <li class="nav-mobile-list__item">
+              <a class="link nav-mobile-list__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-mobile-list__item">
+              <a class="link nav-mobile-list__link nav-mobile-list__link--current" href=""
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-mobile-list__item">
+              <a class="link nav-mobile-list__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mobile-wrapper">
+            <ul class="contact-mobile-list list">
+              <li class="contact-mobile-list__item">
+                <a
+                  class="contact-mobile-list__link link contact-mobile-list__link--accent"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contact-mobile-list__item">
+                <a class="contact-mobile-list__link link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social list">
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Портфолио -->
       <section class="portfolio section">
@@ -81,7 +138,7 @@
             </li>
           </ul>
 
-          <!-- <ul class="portfolio__list list">
+          <ul class="portfolio__list list">
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__info-wrap">
@@ -694,12 +751,12 @@
                 </div>
               </a>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-address">
           <a class="logo footer__logo link" href="./"
@@ -781,6 +838,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
