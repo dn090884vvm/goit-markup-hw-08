@@ -5,6 +5,10 @@
   display: none;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   @include font(700, 24px, 28px);
@@ -186,9 +190,6 @@
     margin-left: auto;
   }
 
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
   .head-container {
     display: flex;
     align-items: center;
