@@ -434,10 +434,9 @@ ol {
 .burger-btn__icon {
   width: 40px;
   height: 40px;
-  fill: #000000;
 }
 
-.burger-btn__icon:hover, .burger-btn__icon:focus {
+.burger-btn:hover, .burger-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -1307,6 +1306,23 @@ ol {
   margin-bottom: 30px;
 }
 
+.portfolio__info-overlay {
+  position: absolute;
+  overflow: auto;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 77px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--cubic);
+}
+
 .portfolio__link {
   display: block;
   transition: box-shadow 250ms var(--cubic);
@@ -1318,7 +1334,7 @@ ol {
 
 .portfolio__link:hover .portfolio__info-overlay,
 .portfolio__link:focus .portfolio__info-overlay {
-  transform: translateY(0%);
+  transform: translateY(-100%);
 }
 
 .portfolio__description {
@@ -1350,24 +1366,6 @@ ol {
   overflow: hidden;
 }
 
-.portfolio__info-overlay {
-  position: absolute;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 77px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(101%);
-  transition: transform 250ms var(--cubic);
-}
-
 @media screen and (min-width: 768px) {
   .portfolio__info-overlay {
     padding-top: 49px;
@@ -1380,7 +1378,6 @@ ol {
     margin-left: -30px;
   }
   .portfolio__item {
-    display: flex;
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
@@ -1388,6 +1385,7 @@ ol {
   .portfolio__link {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   .portfolio__description {
     flex-grow: 1;

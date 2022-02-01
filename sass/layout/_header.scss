@@ -37,12 +37,11 @@
   &__icon {
     width: 40px;
     height: 40px;
-    fill: #000000;
-
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
+    // fill: #000000;
+  }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
 
