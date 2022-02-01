@@ -286,6 +286,10 @@
     margin-right: 93px;
   }
 
+  .logo {
+    @include font(700, 26px, 31px);
+  }
+
   .contact-list {
     display: flex;
     flex-direction: row;

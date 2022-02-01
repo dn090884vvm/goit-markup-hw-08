@@ -660,6 +660,11 @@ ol {
     padding-bottom: 25px;
     margin-right: 93px;
   }
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
   .contact-list {
     display: flex;
     flex-direction: row;
